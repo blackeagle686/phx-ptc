@@ -23,6 +23,10 @@
 #include <vector>
 #include <cmath>
 
+#ifdef _WIN32
+#include <windows.h>
+#endif
+
 using namespace phx;
 
 // Simulate complex weight application (future: MZI mesh)
@@ -42,6 +46,10 @@ static Wave weighted_sum(const WaveChannel& inputs,
 }
 
 int main() {
+#ifdef _WIN32
+    // Set console output codepage to UTF-8 to ensure box-drawing characters render correctly
+    SetConsoleOutputCP(CP_UTF8);
+#endif
     std::cout << R"(
   ═══════════════════════════════════════════════════════════════
   PHX-PTC :: Photonic Neuron Demo
