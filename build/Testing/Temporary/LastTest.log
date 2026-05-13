@@ -1,0 +1,162 @@
+Start testing: May 13 20:54 Egypt Summer Time
+----------------------------------------------------------
+1/5 Testing: test_wave
+1/5 Test: test_wave
+Command: "C:/Users/The_Last_King/OneDrive/Documents/Projects/phx-ptc/build/tests/Release/test_wave.exe"
+Directory: C:/Users/The_Last_King/OneDrive/Documents/Projects/phx-ptc/build/tests
+"test_wave" start time: May 13 20:54 Egypt Summer Time
+Output:
+----------------------------------------------------------
+  [TEST] default_wave_is_dark... PASS
+  [TEST] real_amplitude_construction... PASS
+  [TEST] complex_amplitude_construction... PASS
+  [TEST] from_polar... PASS
+  [TEST] from_intensity... PASS
+  [TEST] from_intensity_with_phase... PASS
+  [TEST] attenuation... PASS
+  [TEST] phase_shift... PASS
+  [TEST] superposition_constructive... PASS
+  [TEST] superposition_destructive... PASS
+  [TEST] wave_channel_construction... PASS
+  [TEST] wave_channel_total_power... PASS
+  [TEST] wave_channel_intensities... PASS
+  [TEST] phase_degrees... PASS
+
+  ═══ PHX-PTC :: Wave Tests ═══
+
+
+  Results: 14 passed, 0 failed
+
+<end of output>
+Test time =   0.29 sec
+----------------------------------------------------------
+Test Passed.
+"test_wave" end time: May 13 20:54 Egypt Summer Time
+"test_wave" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/5 Testing: test_relu_sa
+2/5 Test: test_relu_sa
+Command: "C:/Users/The_Last_King/OneDrive/Documents/Projects/phx-ptc/build/tests/Release/test_relu_sa.exe"
+Directory: C:/Users/The_Last_King/OneDrive/Documents/Projects/phx-ptc/build/tests
+"test_relu_sa" start time: May 13 20:54 Egypt Summer Time
+Output:
+----------------------------------------------------------
+  [TEST] zero_below_threshold... PASS
+  [TEST] zero_at_threshold... PASS
+  [TEST] dark_input... PASS
+  [TEST] transparent_above_threshold... PASS
+  [TEST] energy_conservation... PASS
+  [TEST] output_intensity_formula... PASS
+  [TEST] phase_preservation... PASS
+  [TEST] boundary_continuity... PASS
+  [TEST] high_intensity_approaches_linear... PASS
+  [TEST] configurable_threshold... PASS
+  [TEST] factory_creation... PASS
+
+  ═══ PHX-PTC :: ReLU/SA Tests ═══
+
+
+  Results: 11 passed, 0 failed
+
+<end of output>
+Test time =   0.07 sec
+----------------------------------------------------------
+Test Passed.
+"test_relu_sa" end time: May 13 20:54 Egypt Summer Time
+"test_relu_sa" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/5 Testing: test_sigmoid_mzi
+3/5 Test: test_sigmoid_mzi
+Command: "C:/Users/The_Last_King/OneDrive/Documents/Projects/phx-ptc/build/tests/Release/test_sigmoid_mzi.exe"
+Directory: C:/Users/The_Last_King/OneDrive/Documents/Projects/phx-ptc/build/tests
+"test_sigmoid_mzi" start time: May 13 20:54 Egypt Summer Time
+Output:
+----------------------------------------------------------
+  [TEST] zero_input_quadrature_bias... PASS
+  [TEST] quadrature_transmission... PASS
+  [TEST] bounded_output_intensity... PASS
+  [TEST] cos_squared_transfer... PASS
+  [TEST] s_shaped_response... PASS
+  [TEST] phase_flip_negative_cosine... PASS
+  [TEST] alpha_parameter_effect... PASS
+  [TEST] periodicity... PASS
+  [TEST] factory_creation... PASS
+
+  ═══ PHX-PTC :: Sigmoid/MZI Tests ═══
+
+
+  Results: 9 passed, 0 failed
+
+<end of output>
+Test time =   0.25 sec
+----------------------------------------------------------
+Test Passed.
+"test_sigmoid_mzi" end time: May 13 20:54 Egypt Summer Time
+"test_sigmoid_mzi" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/5 Testing: test_tanh_bistable
+4/5 Test: test_tanh_bistable
+Command: "C:/Users/The_Last_King/OneDrive/Documents/Projects/phx-ptc/build/tests/Release/test_tanh_bistable.exe"
+Directory: C:/Users/The_Last_King/OneDrive/Documents/Projects/phx-ptc/build/tests
+"test_tanh_bistable" start time: May 13 20:54 Egypt Summer Time
+Output:
+----------------------------------------------------------
+  [TEST] zero_input_dark... PASS
+  [TEST] tanh_response_formula... PASS
+  [TEST] saturation_high_intensity... PASS
+  [TEST] monotonic_output... PASS
+  [TEST] beta_steepness... PASS
+  [TEST] phase_offset... PASS
+  [TEST] no_phase_default... PASS
+  [TEST] bounded_transmission... PASS
+  [TEST] complex_phase_preservation... PASS
+  [TEST] factory_creation... PASS
+
+  === PHX-PTC :: Tanh/Bistable Tests ===
+
+
+  Results: 10 passed, 0 failed
+
+<end of output>
+Test time =   0.07 sec
+----------------------------------------------------------
+Test Passed.
+"test_tanh_bistable" end time: May 13 20:54 Egypt Summer Time
+"test_tanh_bistable" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/5 Testing: test_softmax_xgm
+5/5 Test: test_softmax_xgm
+Command: "C:/Users/The_Last_King/OneDrive/Documents/Projects/phx-ptc/build/tests/Release/test_softmax_xgm.exe"
+Directory: C:/Users/The_Last_King/OneDrive/Documents/Projects/phx-ptc/build/tests
+"test_softmax_xgm" start time: May 13 20:54 Egypt Summer Time
+Output:
+----------------------------------------------------------
+  [TEST] empty_channel... PASS
+  [TEST] single_channel_identity... PASS
+  [TEST] probabilities_sum_to_one... PASS
+  [TEST] uniform_input_uniform_output... PASS
+  [TEST] winner_take_all_high_gamma... PASS
+  [TEST] phase_preservation... PASS
+  [TEST] stronger_channel_gets_more_gain... PASS
+  [TEST] output_intensity_formula... PASS
+  [TEST] low_gamma_near_uniform... PASS
+  [TEST] factory_creation... PASS
+
+  === PHX-PTC :: Softmax/XGM Tests ===
+
+
+  Results: 10 passed, 0 failed
+
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"test_softmax_xgm" end time: May 13 20:54 Egypt Summer Time
+"test_softmax_xgm" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: May 13 20:54 Egypt Summer Time

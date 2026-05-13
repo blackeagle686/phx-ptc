@@ -1,0 +1,10 @@
+^C:\USERS\THE_LAST_KING\ONEDRIVE\DOCUMENTS\PROJECTS\PHX-PTC\BUILD\CMAKEFILES\05BD5B1D72569F6CF3D1BAA36AC391EF\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/The_Last_King/OneDrive/Documents/Projects/phx-ptc -BC:/Users/The_Last_King/OneDrive/Documents/Projects/phx-ptc/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/The_Last_King/OneDrive/Documents/Projects/phx-ptc/build/phx-ptc.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

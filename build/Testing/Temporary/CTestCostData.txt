@@ -1,0 +1,6 @@
+test_wave 1 0.294855
+test_relu_sa 1 0.0687863
+test_sigmoid_mzi 1 0.249912
+test_tanh_bistable 1 0.0701552
+test_softmax_xgm 1 0.0635739
+---

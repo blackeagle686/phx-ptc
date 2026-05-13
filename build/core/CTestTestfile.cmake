@@ -1,0 +1,6 @@
+# CMake generated Testfile for 
+# Source directory: C:/Users/The_Last_King/OneDrive/Documents/Projects/phx-ptc/core
+# Build directory: C:/Users/The_Last_King/OneDrive/Documents/Projects/phx-ptc/build/core
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.
