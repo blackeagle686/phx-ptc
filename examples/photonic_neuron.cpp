@@ -50,15 +50,28 @@ int main() {
 #ifdef _WIN32
     // Set console output codepage to UTF-8 to ensure box-drawing characters render correctly
     SetConsoleOutputCP(CP_UTF8);
+
+    // Enable ANSI escape sequences (Virtual Terminal Processing)
+    HANDLE hOut = GetStdHandle(STD_OUTPUT_HANDLE);
+    if (hOut != INVALID_HANDLE_VALUE) {
+        DWORD dwMode = 0;
+        if (GetConsoleMode(hOut, &dwMode)) {
+            dwMode |= ENABLE_VIRTUAL_TERMINAL_PROCESSING;
+            SetConsoleMode(hOut, dwMode);
+        }
+    }
 #endif
-    std::cout << R"(
+    const char* gold = "\x1b[38;2;255;185;60m";
+    const char* reset = "\x1b[0m";
+
+    std::cout << gold << R"(
   ═══════════════════════════════════════════════════════════════
   PHX-PTC :: Photonic Neuron Demo
   ═══════════════════════════════════════════════════════════════
   Simulating: y = activation(W · x)
   Electronic logic → Photonic wave logic
   ═══════════════════════════════════════════════════════════════
-)" << std::endl;
+)" << reset << std::endl;
 
     // ── Input: 4-channel optical signal ─────────────────────────────
     WaveChannel inputs = {
