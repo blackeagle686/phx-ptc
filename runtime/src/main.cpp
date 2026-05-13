@@ -15,6 +15,10 @@
 #include <cmath>
 #include <algorithm>
 
+#ifdef _WIN32
+#include <windows.h>
+#endif
+
 using namespace phx;
 
 // ═════════════════════════════════════════════════════════════════════
@@ -373,6 +377,10 @@ static void print_usage() {
 }
 
 int main(int argc, char* argv[]) {
+#ifdef _WIN32
+    // Set console output codepage to UTF-8 to ensure box-drawing characters render correctly
+    SetConsoleOutputCP(CP_UTF8);
+#endif
     print_banner();
 
     std::string command = "all";
