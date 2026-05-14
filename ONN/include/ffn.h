@@ -53,6 +53,7 @@
         tanh    : ring resonator
         softmax : cross-gain modulation
     
+
 */
 
 
