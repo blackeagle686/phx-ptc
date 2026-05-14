@@ -19,7 +19,7 @@ The **Saturable Absorber** is a passive nonlinear device. At low intensities, th
 
 The **MZI** uses constructive and destructive interference between two waveguide arms. By shifting the phase in one arm (using a thermal or electro-optic tuner), the output intensity follows a $\cos^2$ curve, which perfectly maps to the **Sigmoid** activation function when properly biased.
 
-![MZI for Sigmoid](file:///c:/Users/The_Last_King/OneDrive/Documents/Projects/phx-ptc/docs/images/sigmoid_mzi.png)
+![MZI for Sigmoid](https://www.researchgate.net/publication/346945922/figure/fig1/AS:983763441954816@1611558890819/a-Schematic-of-the-Mach-Zehnder-interferometer-MZI-modulator-on-LN-b-Schematic-of-the.png)
 
 *   **Physical Mapping**: $I_{out} \propto \cos^2(\Delta\phi)$
 *   **Advantage**: High-speed modulation and tunable nonlinearity.
