@@ -8,7 +8,7 @@
 
 *Quantum Simulator: [PHX-QUANTUM](https://github.com/blackeagle686/phx-quantum)*
 
-## Project Visualizations 🎨
+## Project Visualizations 
 
 ### Photonic Processing Engine
 <img src="docs/images/phx-ptc1.png" width="800" alt="PHX-PTC Architecture">
