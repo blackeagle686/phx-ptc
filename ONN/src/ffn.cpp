@@ -52,7 +52,8 @@ void FFN::forward()
     else if (activation == "cross_gain_modulation") input = phx::cross_gain_modulation(input, weights, bias);
     else input = phx::mzi(input, weights, bias);
 
-    // 
+    // output = input;
+    output.set_wave(input.get_wave());
 }
 
 void FFN::backward()
