@@ -8,7 +8,7 @@ This document outlines the physical hardware components that implement the neura
 
 The **Saturable Absorber** is a passive nonlinear device. At low intensities, the material (often a 2D material like Graphene) absorbs photons, making the waveguide opaque. At high intensities, the material "bleaches," becoming transparent and allowing light to pass.
 
-![Saturable Absorber for ReLU](file:///c:/Users/The_Last_King/OneDrive/Documents/Projects/phx-ptc/docs/images/relu_sa.png)
+![Saturable Absorber for ReLU](https://ars.els-cdn.com/content/image/3-s2.0-B0123693950006692-gr8.jpg)
 
 *   **Physical Mapping**: $I_{out} = \max(0, I_{in} - I_{threshold})$
 *   **Advantage**: Zero-power passive thresholding.
