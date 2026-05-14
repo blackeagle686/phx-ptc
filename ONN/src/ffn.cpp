@@ -41,8 +41,7 @@ void FFN::set_activation(std::string activation = "mzi")
 
 void FFN::forward()
 {
-
-    
+    // init weights & b
     // activation function:
     if (activation == "mzi") input = phx::mzi(input, weights, bias);
     else if (activation == "ring_resonator") input = phx::ring_resonator(input, weights, bias);
