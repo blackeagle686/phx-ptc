@@ -41,8 +41,22 @@ void FFN::set_activation(std::string activation = "mzi")
 
 void FFN::forward()
 {
-    
-    
+    if (activation == "mzi")
+    {
+        input = phx::mzi(input, weights, bias);
+    }
+    else if (activation == "ring_resonator")
+    {
+        input = phx::ring_resonator(input, weights, bias);
+    }
+    else if (activation == "saturable_absorber")
+    {
+        input = phx::saturable_absorber(input, weights, bias);
+    }
+    else if (activation == "cross_gain_modulation")
+    {
+        input = phx::cross_gain_modulation(input, weights, bias);
+    }
 }
 
 void FFN::backward()
