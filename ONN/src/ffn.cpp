@@ -47,7 +47,7 @@ void FFN::forward()
     {
         cout << "[*] Initializing weights and bias..." << endl;
         weights = std::vector<Complex>(input.size(), Complex(1.0, 0.0));
-        cout << "[*] "
+        cout << "[*] Weights initialized with shape []"
     }
     if (bias.empty()) bias = std::vector<Complex>(input.size(), Complex(0.0, 0.0));
     
