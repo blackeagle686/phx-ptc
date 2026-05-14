@@ -29,7 +29,7 @@ void FFN::set_bias(std::vector<Complex>& bias)
     this->bias = bias;
 }
 
-// using mzi by default
+// using mzi by default:  mzi ~ sigmoid
 void FFN::set_activation(std::string activation = "mzi") 
 {
     this->activation = activation;
