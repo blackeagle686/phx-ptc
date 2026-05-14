@@ -53,7 +53,6 @@ void FFN::forward()
     else input = phx::mzi(input, weights, bias);
 
     // output = input;
-    output.set_wave(input.get_wave());
 }
 
 void FFN::backward()
