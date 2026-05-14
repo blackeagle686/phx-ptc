@@ -42,6 +42,7 @@ void FFN::set_activation(std::string activation = "mzi")
 void FFN::forward()
 {
     
+    
 }
 
 void FFN::backward()
