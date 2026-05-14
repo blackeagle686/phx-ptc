@@ -6,6 +6,7 @@
 # testing this directory and lists subdirectories to be tested as well.
 subdirs("core")
 subdirs("photonic")
+subdirs("ONN")
 subdirs("runtime")
 subdirs("tests")
 subdirs("examples")

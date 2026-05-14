@@ -174,6 +174,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
+    <ProjectReference Include="C:\Users\The_Last_King\OneDrive\Documents\Projects\phx-ptc\build\tests\ffn_test.vcxproj">
+      <Project>{92EC482E-0BA9-3861-AF14-ADC05832E7A4}</Project>
+      <Name>ffn_test</Name>
+    </ProjectReference>
     <ProjectReference Include="C:\Users\The_Last_King\OneDrive\Documents\Projects\phx-ptc\build\examples\photonic_neuron.vcxproj">
       <Project>{8039590E-8E31-3A74-B8BF-EF7DD2F17557}</Project>
       <Name>photonic_neuron</Name>
@@ -181,6 +185,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ProjectReference Include="C:\Users\The_Last_King\OneDrive\Documents\Projects\phx-ptc\build\runtime\phx-ptc.vcxproj">
       <Project>{E4339C3D-843D-34AC-9C9D-F01C52FE4BE9}</Project>
       <Name>phx-ptc</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\The_Last_King\OneDrive\Documents\Projects\phx-ptc\build\ONN\phx_onn.vcxproj">
+      <Project>{CF91377D-B754-3B68-9475-86940D4E7B4A}</Project>
+      <Name>phx_onn</Name>
     </ProjectReference>
     <ProjectReference Include="C:\Users\The_Last_King\OneDrive\Documents\Projects\phx-ptc\build\photonic\phx_photonic.vcxproj">
       <Project>{D263B65C-CDCB-3F15-B380-5DF13A98647D}</Project>

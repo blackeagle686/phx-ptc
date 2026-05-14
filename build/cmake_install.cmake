@@ -44,6 +44,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
+  include("C:/Users/The_Last_King/OneDrive/Documents/Projects/phx-ptc/build/ONN/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
   include("C:/Users/The_Last_King/OneDrive/Documents/Projects/phx-ptc/build/runtime/cmake_install.cmake")
 endif()
 

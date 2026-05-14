@@ -4,6 +4,8 @@ C:/Users/The_Last_King/OneDrive/Documents/Projects/phx-ptc/build/CMakeFiles/ZERO
 C:/Users/The_Last_King/OneDrive/Documents/Projects/phx-ptc/build/core/CMakeFiles/RUN_TESTS.dir
 C:/Users/The_Last_King/OneDrive/Documents/Projects/phx-ptc/build/photonic/CMakeFiles/phx_photonic.dir
 C:/Users/The_Last_King/OneDrive/Documents/Projects/phx-ptc/build/photonic/CMakeFiles/RUN_TESTS.dir
+C:/Users/The_Last_King/OneDrive/Documents/Projects/phx-ptc/build/ONN/CMakeFiles/phx_onn.dir
+C:/Users/The_Last_King/OneDrive/Documents/Projects/phx-ptc/build/ONN/CMakeFiles/RUN_TESTS.dir
 C:/Users/The_Last_King/OneDrive/Documents/Projects/phx-ptc/build/runtime/CMakeFiles/phx-ptc.dir
 C:/Users/The_Last_King/OneDrive/Documents/Projects/phx-ptc/build/runtime/CMakeFiles/RUN_TESTS.dir
 C:/Users/The_Last_King/OneDrive/Documents/Projects/phx-ptc/build/tests/CMakeFiles/test_wave.dir
@@ -11,6 +13,7 @@ C:/Users/The_Last_King/OneDrive/Documents/Projects/phx-ptc/build/tests/CMakeFile
 C:/Users/The_Last_King/OneDrive/Documents/Projects/phx-ptc/build/tests/CMakeFiles/test_sigmoid_mzi.dir
 C:/Users/The_Last_King/OneDrive/Documents/Projects/phx-ptc/build/tests/CMakeFiles/test_tanh_bistable.dir
 C:/Users/The_Last_King/OneDrive/Documents/Projects/phx-ptc/build/tests/CMakeFiles/test_softmax_xgm.dir
+C:/Users/The_Last_King/OneDrive/Documents/Projects/phx-ptc/build/tests/CMakeFiles/ffn_test.dir
 C:/Users/The_Last_King/OneDrive/Documents/Projects/phx-ptc/build/tests/CMakeFiles/RUN_TESTS.dir
 C:/Users/The_Last_King/OneDrive/Documents/Projects/phx-ptc/build/examples/CMakeFiles/photonic_neuron.dir
 C:/Users/The_Last_King/OneDrive/Documents/Projects/phx-ptc/build/examples/CMakeFiles/RUN_TESTS.dir

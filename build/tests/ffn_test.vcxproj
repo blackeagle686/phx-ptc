@@ -22,11 +22,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{AB3D3266-43D8-3575-AB51-F04A765A9AC7}</ProjectGuid>
+    <ProjectGuid>{92EC482E-0BA9-3861-AF14-ADC05832E7A4}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
     <Platform>x64</Platform>
-    <ProjectName>test_tanh_bistable</ProjectName>
+    <ProjectName>ffn_test</ProjectName>
     <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -60,26 +60,26 @@
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\The_Last_King\OneDrive\Documents\Projects\phx-ptc\build\tests\Debug\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">test_tanh_bistable.dir\Debug\</IntDir>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">test_tanh_bistable</TargetName>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ffn_test.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ffn_test</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\The_Last_King\OneDrive\Documents\Projects\phx-ptc\build\tests\Release\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">test_tanh_bistable.dir\Release\</IntDir>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">test_tanh_bistable</TargetName>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ffn_test.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ffn_test</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\The_Last_King\OneDrive\Documents\Projects\phx-ptc\build\tests\MinSizeRel\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">test_tanh_bistable.dir\MinSizeRel\</IntDir>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">test_tanh_bistable</TargetName>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">ffn_test.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">ffn_test</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\The_Last_King\OneDrive\Documents\Projects\phx-ptc\build\tests\RelWithDebInfo\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">test_tanh_bistable.dir\RelWithDebInfo\</IntDir>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">test_tanh_bistable</TargetName>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">ffn_test.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">ffn_test</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
@@ -132,9 +132,9 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
-      <ImportLibrary>C:/Users/The_Last_King/OneDrive/Documents/Projects/phx-ptc/build/tests/Debug/test_tanh_bistable.lib</ImportLibrary>
+      <ImportLibrary>C:/Users/The_Last_King/OneDrive/Documents/Projects/phx-ptc/build/tests/Debug/ffn_test.lib</ImportLibrary>
       <LinkErrorReporting></LinkErrorReporting>
-      <ProgramDataBaseFile>C:/Users/The_Last_King/OneDrive/Documents/Projects/phx-ptc/build/tests/Debug/test_tanh_bistable.pdb</ProgramDataBaseFile>
+      <ProgramDataBaseFile>C:/Users/The_Last_King/OneDrive/Documents/Projects/phx-ptc/build/tests/Debug/ffn_test.pdb</ProgramDataBaseFile>
       <RandomizedBaseAddress></RandomizedBaseAddress>
       <SubSystem>Console</SubSystem>
     </Link>
@@ -191,9 +191,9 @@
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
-      <ImportLibrary>C:/Users/The_Last_King/OneDrive/Documents/Projects/phx-ptc/build/tests/Release/test_tanh_bistable.lib</ImportLibrary>
+      <ImportLibrary>C:/Users/The_Last_King/OneDrive/Documents/Projects/phx-ptc/build/tests/Release/ffn_test.lib</ImportLibrary>
       <LinkErrorReporting></LinkErrorReporting>
-      <ProgramDataBaseFile>C:/Users/The_Last_King/OneDrive/Documents/Projects/phx-ptc/build/tests/Release/test_tanh_bistable.pdb</ProgramDataBaseFile>
+      <ProgramDataBaseFile>C:/Users/The_Last_King/OneDrive/Documents/Projects/phx-ptc/build/tests/Release/ffn_test.pdb</ProgramDataBaseFile>
       <RandomizedBaseAddress></RandomizedBaseAddress>
       <SubSystem>Console</SubSystem>
     </Link>
@@ -250,9 +250,9 @@
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
-      <ImportLibrary>C:/Users/The_Last_King/OneDrive/Documents/Projects/phx-ptc/build/tests/MinSizeRel/test_tanh_bistable.lib</ImportLibrary>
+      <ImportLibrary>C:/Users/The_Last_King/OneDrive/Documents/Projects/phx-ptc/build/tests/MinSizeRel/ffn_test.lib</ImportLibrary>
       <LinkErrorReporting></LinkErrorReporting>
-      <ProgramDataBaseFile>C:/Users/The_Last_King/OneDrive/Documents/Projects/phx-ptc/build/tests/MinSizeRel/test_tanh_bistable.pdb</ProgramDataBaseFile>
+      <ProgramDataBaseFile>C:/Users/The_Last_King/OneDrive/Documents/Projects/phx-ptc/build/tests/MinSizeRel/ffn_test.pdb</ProgramDataBaseFile>
       <RandomizedBaseAddress></RandomizedBaseAddress>
       <SubSystem>Console</SubSystem>
     </Link>
@@ -308,9 +308,9 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
-      <ImportLibrary>C:/Users/The_Last_King/OneDrive/Documents/Projects/phx-ptc/build/tests/RelWithDebInfo/test_tanh_bistable.lib</ImportLibrary>
+      <ImportLibrary>C:/Users/The_Last_King/OneDrive/Documents/Projects/phx-ptc/build/tests/RelWithDebInfo/ffn_test.lib</ImportLibrary>
       <LinkErrorReporting></LinkErrorReporting>
-      <ProgramDataBaseFile>C:/Users/The_Last_King/OneDrive/Documents/Projects/phx-ptc/build/tests/RelWithDebInfo/test_tanh_bistable.pdb</ProgramDataBaseFile>
+      <ProgramDataBaseFile>C:/Users/The_Last_King/OneDrive/Documents/Projects/phx-ptc/build/tests/RelWithDebInfo/ffn_test.pdb</ProgramDataBaseFile>
       <RandomizedBaseAddress></RandomizedBaseAddress>
       <SubSystem>Console</SubSystem>
     </Link>
@@ -376,7 +376,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="C:\Users\The_Last_King\OneDrive\Documents\Projects\phx-ptc\tests\test_tanh_bistable.cpp" />
+    <ClCompile Include="C:\Users\The_Last_King\OneDrive\Documents\Projects\phx-ptc\tests\ffn_test.cpp" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

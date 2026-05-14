@@ -86,7 +86,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\The_Last_King\OneDrive\Documents\Projects\phx-ptc\photonic\include;C:\Users\The_Last_King\OneDrive\Documents\Projects\phx-ptc\core\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\The_Last_King\OneDrive\Documents\Projects\phx-ptc\photonic\include;C:\Users\The_Last_King\OneDrive\Documents\Projects\phx-ptc\core\include;C:\Users\The_Last_King\OneDrive\Documents\Projects\phx-ptc\ONN\include;C:\Users\The_Last_King\OneDrive\Documents\Projects\phx-ptc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <BufferSecurityCheck></BufferSecurityCheck>
@@ -114,10 +114,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;_USE_MATH_DEFINES;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\The_Last_King\OneDrive\Documents\Projects\phx-ptc\photonic\include;C:\Users\The_Last_King\OneDrive\Documents\Projects\phx-ptc\core\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\The_Last_King\OneDrive\Documents\Projects\phx-ptc\photonic\include;C:\Users\The_Last_King\OneDrive\Documents\Projects\phx-ptc\core\include;C:\Users\The_Last_King\OneDrive\Documents\Projects\phx-ptc\ONN\include;C:\Users\The_Last_King\OneDrive\Documents\Projects\phx-ptc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\The_Last_King\OneDrive\Documents\Projects\phx-ptc\photonic\include;C:\Users\The_Last_King\OneDrive\Documents\Projects\phx-ptc\core\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\The_Last_King\OneDrive\Documents\Projects\phx-ptc\photonic\include;C:\Users\The_Last_King\OneDrive\Documents\Projects\phx-ptc\core\include;C:\Users\The_Last_King\OneDrive\Documents\Projects\phx-ptc\ONN\include;C:\Users\The_Last_King\OneDrive\Documents\Projects\phx-ptc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -125,7 +125,7 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>..\photonic\Debug\phx_photonic.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>..\photonic\Debug\phx_photonic.lib;..\ONN\Debug\phx_onn.lib;..\photonic\Debug\phx_photonic.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <DataExecutionPrevention></DataExecutionPrevention>
@@ -144,7 +144,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\The_Last_King\OneDrive\Documents\Projects\phx-ptc\photonic\include;C:\Users\The_Last_King\OneDrive\Documents\Projects\phx-ptc\core\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\The_Last_King\OneDrive\Documents\Projects\phx-ptc\photonic\include;C:\Users\The_Last_King\OneDrive\Documents\Projects\phx-ptc\core\include;C:\Users\The_Last_King\OneDrive\Documents\Projects\phx-ptc\ONN\include;C:\Users\The_Last_King\OneDrive\Documents\Projects\phx-ptc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <BufferSecurityCheck></BufferSecurityCheck>
@@ -173,10 +173,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_USE_MATH_DEFINES;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\The_Last_King\OneDrive\Documents\Projects\phx-ptc\photonic\include;C:\Users\The_Last_King\OneDrive\Documents\Projects\phx-ptc\core\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\The_Last_King\OneDrive\Documents\Projects\phx-ptc\photonic\include;C:\Users\The_Last_King\OneDrive\Documents\Projects\phx-ptc\core\include;C:\Users\The_Last_King\OneDrive\Documents\Projects\phx-ptc\ONN\include;C:\Users\The_Last_King\OneDrive\Documents\Projects\phx-ptc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\The_Last_King\OneDrive\Documents\Projects\phx-ptc\photonic\include;C:\Users\The_Last_King\OneDrive\Documents\Projects\phx-ptc\core\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\The_Last_King\OneDrive\Documents\Projects\phx-ptc\photonic\include;C:\Users\The_Last_King\OneDrive\Documents\Projects\phx-ptc\core\include;C:\Users\The_Last_King\OneDrive\Documents\Projects\phx-ptc\ONN\include;C:\Users\The_Last_King\OneDrive\Documents\Projects\phx-ptc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -184,7 +184,7 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>..\photonic\Release\phx_photonic.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>..\photonic\Release\phx_photonic.lib;..\ONN\Release\phx_onn.lib;..\photonic\Release\phx_photonic.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <DataExecutionPrevention></DataExecutionPrevention>
@@ -203,7 +203,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\The_Last_King\OneDrive\Documents\Projects\phx-ptc\photonic\include;C:\Users\The_Last_King\OneDrive\Documents\Projects\phx-ptc\core\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\The_Last_King\OneDrive\Documents\Projects\phx-ptc\photonic\include;C:\Users\The_Last_King\OneDrive\Documents\Projects\phx-ptc\core\include;C:\Users\The_Last_King\OneDrive\Documents\Projects\phx-ptc\ONN\include;C:\Users\The_Last_King\OneDrive\Documents\Projects\phx-ptc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <BufferSecurityCheck></BufferSecurityCheck>
@@ -232,10 +232,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_USE_MATH_DEFINES;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\The_Last_King\OneDrive\Documents\Projects\phx-ptc\photonic\include;C:\Users\The_Last_King\OneDrive\Documents\Projects\phx-ptc\core\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\The_Last_King\OneDrive\Documents\Projects\phx-ptc\photonic\include;C:\Users\The_Last_King\OneDrive\Documents\Projects\phx-ptc\core\include;C:\Users\The_Last_King\OneDrive\Documents\Projects\phx-ptc\ONN\include;C:\Users\The_Last_King\OneDrive\Documents\Projects\phx-ptc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\The_Last_King\OneDrive\Documents\Projects\phx-ptc\photonic\include;C:\Users\The_Last_King\OneDrive\Documents\Projects\phx-ptc\core\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\The_Last_King\OneDrive\Documents\Projects\phx-ptc\photonic\include;C:\Users\The_Last_King\OneDrive\Documents\Projects\phx-ptc\core\include;C:\Users\The_Last_King\OneDrive\Documents\Projects\phx-ptc\ONN\include;C:\Users\The_Last_King\OneDrive\Documents\Projects\phx-ptc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -243,7 +243,7 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>..\photonic\MinSizeRel\phx_photonic.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>..\photonic\MinSizeRel\phx_photonic.lib;..\ONN\MinSizeRel\phx_onn.lib;..\photonic\MinSizeRel\phx_photonic.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <DataExecutionPrevention></DataExecutionPrevention>
@@ -262,7 +262,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\The_Last_King\OneDrive\Documents\Projects\phx-ptc\photonic\include;C:\Users\The_Last_King\OneDrive\Documents\Projects\phx-ptc\core\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\The_Last_King\OneDrive\Documents\Projects\phx-ptc\photonic\include;C:\Users\The_Last_King\OneDrive\Documents\Projects\phx-ptc\core\include;C:\Users\The_Last_King\OneDrive\Documents\Projects\phx-ptc\ONN\include;C:\Users\The_Last_King\OneDrive\Documents\Projects\phx-ptc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <BufferSecurityCheck></BufferSecurityCheck>
@@ -290,10 +290,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_USE_MATH_DEFINES;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\The_Last_King\OneDrive\Documents\Projects\phx-ptc\photonic\include;C:\Users\The_Last_King\OneDrive\Documents\Projects\phx-ptc\core\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\The_Last_King\OneDrive\Documents\Projects\phx-ptc\photonic\include;C:\Users\The_Last_King\OneDrive\Documents\Projects\phx-ptc\core\include;C:\Users\The_Last_King\OneDrive\Documents\Projects\phx-ptc\ONN\include;C:\Users\The_Last_King\OneDrive\Documents\Projects\phx-ptc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\The_Last_King\OneDrive\Documents\Projects\phx-ptc\photonic\include;C:\Users\The_Last_King\OneDrive\Documents\Projects\phx-ptc\core\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\The_Last_King\OneDrive\Documents\Projects\phx-ptc\photonic\include;C:\Users\The_Last_King\OneDrive\Documents\Projects\phx-ptc\core\include;C:\Users\The_Last_King\OneDrive\Documents\Projects\phx-ptc\ONN\include;C:\Users\The_Last_King\OneDrive\Documents\Projects\phx-ptc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -301,7 +301,7 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>..\photonic\RelWithDebInfo\phx_photonic.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>..\photonic\RelWithDebInfo\phx_photonic.lib;..\ONN\RelWithDebInfo\phx_onn.lib;..\photonic\RelWithDebInfo\phx_photonic.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <DataExecutionPrevention></DataExecutionPrevention>
@@ -385,6 +385,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\The_Last_King\OneDrive\Documents\Projects\phx-ptc\build\ONN\phx_onn.vcxproj">
+      <Project>{CF91377D-B754-3B68-9475-86940D4E7B4A}</Project>
+      <Name>phx_onn</Name>
     </ProjectReference>
     <ProjectReference Include="C:\Users\The_Last_King\OneDrive\Documents\Projects\phx-ptc\build\photonic\phx_photonic.vcxproj">
       <Project>{D263B65C-CDCB-3F15-B380-5DF13A98647D}</Project>
