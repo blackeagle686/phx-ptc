@@ -59,7 +59,6 @@
 
 #include "core/complex.h"
 #include "core/wave.h"
-#include "core/wavechannel.h"
 
 class FFN{
 
