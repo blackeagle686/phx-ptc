@@ -20,6 +20,8 @@
         b : bias vector
         f : activation function
 
-    in 
+    in optical Network: 
+    
+        
     
 */
