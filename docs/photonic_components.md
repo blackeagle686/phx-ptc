@@ -41,7 +41,7 @@ The **MZI** uses constructive and destructive interference between two waveguide
 
 In an array of **Semiconductor Optical Amplifiers (SOAs)** sharing a single gain medium (photon pool), the channels compete for available photons. The strongest input "robs" the gain from the others, effectively normalizing the output intensities across all channels—the physical equivalent of **Softmax**.
 
-![SOA Array for Softmax](file:///c:/Users/The_Last_King/OneDrive/Documents/Projects/phx-ptc/docs/images/softmax_xgm.png)
+![SOA Array for Softmax](https://www.researchgate.net/publication/344557258/figure/fig2/AS:11431281122664802@1677491192722/a-Cross-phase-modulation-XPM-wavelength-conversion-b-cross-gain-modulation-XGM.jpg)
 
 *   **Physical Mapping**: Channel competition for shared gain.
 *   **Advantage**: Massively parallel normalization at the speed of light.
