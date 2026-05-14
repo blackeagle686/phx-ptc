@@ -33,3 +33,8 @@ By modulating both the **Intensity** and the **Phase**, a single waveguide can c
 Light travels at $c \approx 3 \times 10^8$ m/s. In a silicon waveguide, this speed is reduced by the refractive index $n$ ($v = c/n$), but it remains orders of magnitude faster than the drift velocity of electrons in copper wires. 
 
 Because photons are bosons and do not have charge, they do not interact with each other in linear media. This allows for **Wavelength-Division Multiplexing (WDM)**, where multiple independent signals travel through the same waveguide simultaneously at different frequencies without crosstalk.
+
+---
+
+### Next Steps:
+- [Physical Implementation: Photonic Components](photonic_components.md) — Learn how these waves are processed by actual hardware.
