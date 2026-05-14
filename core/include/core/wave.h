@@ -56,7 +56,7 @@ public:
         return from_polar(std::sqrt(I), phi);
     }
 
-    //  Accessors 
+    // Accessors 
 
     // Raw complex amplitude
     Complex amplitude() const { return psi_; }
@@ -76,7 +76,7 @@ public:
     // Is vacuum (no light)?
     bool is_dark() const { return get_intensity() < DEFAULT_TOL; }
 
-    // ── Optical Operations ──────────────────────────────────────────
+    // Optical Operations 
 
     // Attenuate: multiply field by real factor [0, 1]
     // Models optical loss, partial absorption
@@ -95,7 +95,7 @@ public:
         return Wave(psi_ * factor);
     }
 
-    // ── Superposition (wave interference) ───────────────────────────
+    // Superposition (wave interference)
 
     Wave operator+(const Wave& other) const {
         return Wave(psi_ + other.psi_);
@@ -110,13 +110,13 @@ public:
         return *this;
     }
 
-    // ── Comparison ──────────────────────────────────────────────────
+    //  Comparison
 
     bool approx_equals(const Wave& other, double tol = DEFAULT_TOL) const {
         return approx_eq(psi_, other.psi_, tol);
     }
 
-    // ── Display ─────────────────────────────────────────────────────
+    //  Display 
 
     std::string to_string() const {
         std::ostringstream ss;
@@ -153,7 +153,7 @@ private:
 
 class WaveChannel {
 public:
-    // ── Constructors ────────────────────────────────────────────────
+    // Constructors 
 
     WaveChannel() = default;
 
@@ -168,7 +168,7 @@ public:
     explicit WaveChannel(std::vector<Wave> waves)
         : channels_(std::move(waves)) {}
 
-    // ── Accessors ───────────────────────────────────────────────────
+    // ── Accessors 
 
     size_t size() const { return channels_.size(); }
     bool empty() const { return channels_.empty(); }
