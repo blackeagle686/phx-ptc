@@ -74,7 +74,8 @@ void FFN::forward()
     std::cout << "[*] Forward complete. Total Power: " << output.total_power() << std::endl;
 }
 
-// build it using digital
+// build it using digital gradian descent not a photonic gradian descent 
+// bcz 
 void FFN::backward()
 {
     // Backpropagation through photonic circuits (Phase 2)
