@@ -54,10 +54,7 @@
         relu    : saturable absorber 
         sigmoid : mach-zehnder interferometer
         tanh    : ring resonator
-        softmax : cross-gain modulation
-    
-
-        
+        softmax : cross-gain modulation        
 */
 
 
