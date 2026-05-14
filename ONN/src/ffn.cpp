@@ -74,9 +74,10 @@ void FFN::forward()
     std::cout << "[*] Forward complete. Total Power: " << output.total_power() << std::endl;
 }
 
+
 void FFN::backward()
 {
     // Backpropagation through photonic circuits (Phase 2)
 }
 
-} // namespace phx
+} // namespace phx
