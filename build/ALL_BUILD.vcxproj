@@ -178,6 +178,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Project>{92EC482E-0BA9-3861-AF14-ADC05832E7A4}</Project>
       <Name>ffn_test</Name>
     </ProjectReference>
+    <ProjectReference Include="C:\Users\The_Last_King\OneDrive\Documents\Projects\phx-ptc\build\examples\onn_ffn.vcxproj">
+      <Project>{06578769-369D-3073-85CA-FB09228AF006}</Project>
+      <Name>onn_ffn</Name>
+    </ProjectReference>
     <ProjectReference Include="C:\Users\The_Last_King\OneDrive\Documents\Projects\phx-ptc\build\examples\photonic_neuron.vcxproj">
       <Project>{8039590E-8E31-3A74-B8BF-EF7DD2F17557}</Project>
       <Name>photonic_neuron</Name>

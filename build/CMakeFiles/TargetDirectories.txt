@@ -16,4 +16,5 @@ C:/Users/The_Last_King/OneDrive/Documents/Projects/phx-ptc/build/tests/CMakeFile
 C:/Users/The_Last_King/OneDrive/Documents/Projects/phx-ptc/build/tests/CMakeFiles/ffn_test.dir
 C:/Users/The_Last_King/OneDrive/Documents/Projects/phx-ptc/build/tests/CMakeFiles/RUN_TESTS.dir
 C:/Users/The_Last_King/OneDrive/Documents/Projects/phx-ptc/build/examples/CMakeFiles/photonic_neuron.dir
+C:/Users/The_Last_King/OneDrive/Documents/Projects/phx-ptc/build/examples/CMakeFiles/onn_ffn.dir
 C:/Users/The_Last_King/OneDrive/Documents/Projects/phx-ptc/build/examples/CMakeFiles/RUN_TESTS.dir
