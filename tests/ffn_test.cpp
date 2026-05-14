@@ -82,6 +82,7 @@ TEST(ffn_bias_only) {
 
 TEST(ffn_multi_channel_softmax) {
     FFN network;
+    // Input intensity: [1.0, 2.0]
     WaveChannel input = {Wave::from_intensity(1.0), Wave::from_intensity(2.0)};
     network.set_input(input);
     network.set_activation("softmax");
@@ -90,9 +91,17 @@ TEST(ffn_multi_channel_softmax) {
     
     const auto& output = network.get_output();
     ASSERT_TRUE(output.size() == 2);
-    // Softmax should preserve total power or normalize it.
-    // In our XGM model, it normalizes to a probability distribution.
-    ASSERT_APPROX(output[0].get_intensity() + output[1].get_intensity(), 1.0);
+    
+    // In our physical XGM model, I_out[j] = I_in[j] * softmax(I_in)[j]
+    // So the ratio of output intensities should be biased by the exponential
+    double i0 = output[0].get_intensity();
+    double i1 = output[1].get_intensity();
+    
+    // With gamma=1.0:
+    // exp(1)/exp(2) is the ratio of gain factors
+    // I_out[1]/I_out[0] = (I_in[1]*exp(I_in[1])) / (I_in[0]*exp(I_in[0]))
+    double theoretical_ratio = (2.0 * std::exp(2.0)) / (1.0 * std::exp(1.0));
+    ASSERT_APPROX(i1 / i0, theoretical_ratio);
 }
 
 // ─────────────────────────────────────────────────────────────────────
