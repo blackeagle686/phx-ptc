@@ -74,7 +74,7 @@ void FFN::forward()
     std::cout << "[*] Forward complete. Total Power: " << output.total_power() << std::endl;
 }
 
-
+// build it using digital
 void FFN::backward()
 {
     // Backpropagation through photonic circuits (Phase 2)
