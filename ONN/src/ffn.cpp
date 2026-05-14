@@ -58,12 +58,18 @@ void FFN::forward()
     }
 
     // activation function:
+    cout << "[*] Activation function: " << activation << endl;
     if (activation == "mzi") input = phx::mzi(input, weights, bias);
     else if (activation == "ring_resonator") input = phx::ring_resonator(input, weights, bias);
     else if (activation == "saturable_absorber") input = phx::saturable_absorber(input, weights, bias);
     else if (activation == "cross_gain_modulation") input = phx::cross_gain_modulation(input, weights, bias);
     else input = phx::mzi(input, weights, bias);
 
+    cout << "[*] Output: " << input << endl;
+    cout << "[*] Output intensity: " << input.intensity() << endl;
+    cout << "[*] Output phase: " << input.phase() << endl;
+    cout << "[*] Output magnitude: " << input.magnitude() << endl;
+    
     // output = input;
 }
 
