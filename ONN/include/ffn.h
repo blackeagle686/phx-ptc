@@ -57,7 +57,6 @@
         softmax : cross-gain modulation
     
 
-
         
 */
 
