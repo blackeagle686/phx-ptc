@@ -45,7 +45,16 @@ public:
 
     // From magnitude and phase (polar form)
     // ψ = magnitude · e^(iφ)
-    
+    /*
+    This is mathematically equivalent to:
+       psi = magnitude * (cos(phi) + i * sin(phi))
+    using Euler's formula e^(ix) = cos(x) + i*sin(x).
+
+    Why polar form?
+    In many physical systems (like interferometers),
+    magnitude and phase are the naturally manipulated quantities.
+    polar(magnitude, phi) creates the complex number directly.
+    */
     static Wave from_polar(double magnitude, Phase phi) {
         return Wave(std::polar(magnitude, phi));
     }
