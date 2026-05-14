@@ -99,4 +99,4 @@ Built entirely from scratch in C++17. No Eigen, no Boost, no external libraries.
 
 ## License
 
-MIT [Mohammed ALaa](Lin)
+MIT [Mohammed ALaa](LICENSE)
