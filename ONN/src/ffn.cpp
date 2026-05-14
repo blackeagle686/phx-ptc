@@ -49,9 +49,14 @@ void FFN::forward()
         weights = std::vector<Complex>(input.size(), Complex(1.0, 0.0));
         cout << "[*] Weights initialized with shape [" << weights.size() << "]" << endl;
     }
-    if (bias.empty()) bias = std::vector<Complex>(input.size(), Complex(0.0, 0.0));
-    cout << "[*] Bias initialized with shape [" << bias.size() << "]" << endl;
-    
+
+    if (bias.empty())
+    {
+        cout << "[*] Initializing bias..." << endl;
+        bias = std::vector<Complex>(input.size(), Complex(0.0, 0.0));
+        cout << "[*] Bias initialized with shape [" << bias.size() << "]" << endl;
+    }
+
     // activation function:
     if (activation == "mzi") input = phx::mzi(input, weights, bias);
     else if (activation == "ring_resonator") input = phx::ring_resonator(input, weights, bias);
