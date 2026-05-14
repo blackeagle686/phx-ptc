@@ -8,16 +8,16 @@
 
 *Quantum Simulator: [PHX-QUANTUM](https://github.com/blackeagle686/phx-quantum)*
 
-## Photonic Hardware Primitives 
+## Project Visualizations 🎨
 
-PHX-PTC simulates the physical behavior of Silicon Photonic components. These are the building blocks of our optical neural network.
+### Photonic Processing Engine
+<img src="docs/images/phx-ptc1.png" width="800" alt="PHX-PTC Architecture">
 
-| Component | Function | Visualization |
-| :--- | :--- | :--- |
-| **Saturable Absorber** | ReLU Activation | <img src="docs/images/relu_sa.png" width="200" alt="ReLU SA"> |
-| **MZI Modulator** | Sigmoid Activation | <img src="docs/images/sigmoid_mzi.png" width="200" alt="Sigmoid MZI"> |
-| **Ring Resonator** | Tanh Activation | <img src="docs/images/tanh_bistable.png" width="200" alt="Tanh Ring"> |
-| **SOA Array** | Softmax (XGM) | <img src="docs/images/softmax_xgm.png" width="200" alt="Softmax XGM"> |
+### Optical Neural Network Layer (ONN)
+<img src="docs/images/onn_ffn_1.png" width="800" alt="ONN FFN Diagram">
+
+### Wave Non-linearity (Tanh)
+<img src="docs/images/tanh-rep1.png" width="800" alt="Tanh Representation">
 
 ## Phase 1: Photonic Activation Functions
 
