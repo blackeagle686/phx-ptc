@@ -12,6 +12,7 @@
     
     
     output of activation function: 
-        a = 
+        a = f(w·x + b)
+    
     
 */
