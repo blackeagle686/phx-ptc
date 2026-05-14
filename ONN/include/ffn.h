@@ -11,7 +11,7 @@
         softmax : f(x) = exp(x) / sum(exp(x))
     
     
-    output: 
-        
+    output of activation function: 
+        a = 
     
 */
