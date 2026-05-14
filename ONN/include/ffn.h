@@ -24,6 +24,15 @@
     
         neron = MZI 
         MZI : 
-            U(theta, phi) = 
-    
+            U(theta, phi) = [
+                exp(i*phi)*cos(theta) , -sin(theta) ;
+                exp(i*phi)*sin(theta) ,  cos(theta) 
+            ]
+        where: 
+            U : unitary matrix
+            theta : rotation angle
+            phi : phase shift
+            
+        
+    to represent a netowrk of Nerons
 */
