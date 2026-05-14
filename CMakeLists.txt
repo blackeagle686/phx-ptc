@@ -22,6 +22,7 @@ enable_testing()
 # ── Sub-modules ──────────────────────────────────────────────────────
 add_subdirectory(core)
 add_subdirectory(photonic)
+add_subdirectory(ONN)
 add_subdirectory(runtime)
 add_subdirectory(tests)
 add_subdirectory(examples)
