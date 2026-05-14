@@ -24,6 +24,6 @@
     
         neron = MZI 
         MZI : 
-            U()
+            U(theta, phi) = 
     
 */
