@@ -8,7 +8,7 @@
 
 *Quantum Simulator: [PHX-QUANTUM](https://github.com/blackeagle686/phx-quantum)*
 
-## Photonic Hardware Primitives 🔬
+## Photonic Hardware Primitives 
 
 PHX-PTC simulates the physical behavior of Silicon Photonic components. These are the building blocks of our optical neural network.
 
