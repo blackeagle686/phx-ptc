@@ -34,5 +34,7 @@
             phi : phase shift
             
         
-    to represent a netowrk of Nerons
+    to represent a netowrk of N neurons : 
+        U_total = U_N * U_{N-1} * ... * U_1
+    
 */
