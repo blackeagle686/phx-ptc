@@ -41,6 +41,19 @@
         U_N , U_{N-1} , ... , U_1 are unitary matrices
     
     where : 
-        U_N = MZI_N * Phase_N * MZI_{N-1} * Phase_{N-1} * ... * MZI_1 * Phase_1
+        U = Phase * MZI * Phase * MZI * ... * Phase * MZI
+    
+    U : weight matrix of the network
+    Phase : phase shift matrix
+    MZI : MZI matrix
+
+    activation photonic device: 
+        relu    : saturable absorber 
+        sigmoid : mach-zehnder interferometer
+        tanh    : ring resonator
+        softmax : cross-gain modulation
     
 */
+
+
+
