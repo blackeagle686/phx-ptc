@@ -3,6 +3,7 @@
 **Photonic Computing Platform** — A from-scratch C++17 engine that maps GPU architecture and deep learning concepts from binary/electronic logic into photonic (wave-based) logic.
 
 > *Transistors process voltages. Photonic elements process waves.*
+<br>
 > *Quantum Simulator: [PHX-QUANTUM](https://github.com/blackeagle686/phx-quantum)*
 
 ## Vision
