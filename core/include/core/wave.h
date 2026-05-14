@@ -207,12 +207,12 @@ public:
         return result;
     }
 
-    // ── Mutation ────────────────────────────────────────────────────
+    // Mutation
 
     void push_back(const Wave& w) { channels_.push_back(w); }
     void resize(size_t n) { channels_.resize(n); }
 
-    // ── Display ─────────────────────────────────────────────────────
+    // Display
 
     friend std::ostream& operator<<(std::ostream& os, const WaveChannel& wc) {
         os << "WaveChannel[" << wc.size() << "] {\n";
