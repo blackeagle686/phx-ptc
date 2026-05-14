@@ -1,79 +1,82 @@
 #include "ffn.h"
+#include "photonic/element.h"
+#include <iostream>
+#include <algorithm>
 
+namespace phx {
 
-using namespace phx;
-using namespace std;
-
-FFN::FFN()
+FFN::FFN() : activation("mzi")
 {
-    input = WaveChannel();
-    output = WaveChannel();
-    weights = std::vector<Complex>();
-    bias = std::vector<Complex>();
-    activation = "";
 }
 
-FFN::~FFN(){}
+FFN::~FFN() {}
 
-void FFN::set_input(WaveChannel& input)
+void FFN::set_input(const WaveChannel& input)
 {
     this->input = input;
 }
 
-void FFN::set_weights(std::vector<Complex>& weights)
+void FFN::set_weights(const std::vector<Complex>& weights)
 {
     this->weights = weights;
 }
 
-void FFN::set_bias(std::vector<Complex>& bias)
+void FFN::set_bias(const std::vector<Complex>& bias)
 {
     this->bias = bias;
 }
 
-// using mzi by default:
-// MZI ~ sigmoid
-// Ring Resonator ~ tanh
-// Saturable Absorber ~ ReLU
-// Cross Gain Modulation ~ Softmax
-void FFN::set_activation(std::string activation = "mzi")
+void FFN::set_activation(const std::string& activation)
 {
     this->activation = activation;
 }
 
 void FFN::forward()
 {
-    // init weights & bias if not set:
-    if (weights.empty()) 
-    {
-        cout << "[*] Initializing weights and bias..." << endl;
+    if (input.empty()) return;
+
+    // 1. Initialize weights & bias if not set
+    if (weights.empty()) {
+        std::cout << "[*] Initializing default weights (Identity)..." << std::endl;
         weights = std::vector<Complex>(input.size(), Complex(1.0, 0.0));
-        cout << "[*] Weights initialized with shape [" << weights.size() << "]" << endl;
     }
 
-    if (bias.empty())
-    {
-        cout << "[*] Initializing bias..." << endl;
+    if (bias.empty()) {
+        std::cout << "[*] Initializing default bias (Zero)..." << std::endl;
         bias = std::vector<Complex>(input.size(), Complex(0.0, 0.0));
-        cout << "[*] Bias initialized with shape [" << bias.size() << "]" << endl;
     }
 
-    // activation function:
-    cout << "[*] Activation function: " << activation << endl;
-    if (activation == "mzi") input = phx::mzi(input, weights, bias);
-    else if (activation == "ring_resonator") input = phx::ring_resonator(input, weights, bias);
-    else if (activation == "saturable_absorber") input = phx::saturable_absorber(input, weights, bias);
-    else if (activation == "cross_gain_modulation") input = phx::cross_gain_modulation(input, weights, bias);
-    else input = phx::mzi(input, weights, bias);
+    // 2. Linear Pass: y = W * x + b (Coherent Superposition)
+    WaveChannel linear_output(input.size());
+    for (size_t i = 0; i < input.size(); ++i) {
+        // Apply complex weight and add complex bias
+        Complex weighted = input[i].amplitude() * weights[i];
+        Complex biased = weighted + bias[i];
+        linear_output[i] = Wave(biased);
+    }
 
-    cout << "[*] Output: " << input << endl;
-    cout << "[*] Output intensity: " << input.intensity() << endl;
-    cout << "[*] Output phase: " << input.phase() << endl;
-    cout << "[*] Output magnitude: " << input.magnitude() << endl;
+    // 3. Non-Linear Pass: Activation Function
+    std::cout << "[*] Applying Activation: " << activation << std::endl;
     
-    // output = input;
+    // Check if it's a multi-channel activation (like Softmax)
+    if (activation == "softmax" || activation == "cross_gain_modulation") {
+        auto xgm = create_softmax_xgm();
+        output = xgm->process(linear_output);
+    } else {
+        // Single-channel activation (ReLU, Sigmoid, Tanh)
+        auto act = create_activation(activation);
+        output = WaveChannel(linear_output.size());
+        for (size_t i = 0; i < linear_output.size(); ++i) {
+            output[i] = act->process(linear_output[i]);
+        }
+    }
+
+    std::cout << "[*] Forward complete. Total Power: " << output.total_power() << std::endl;
 }
 
 void FFN::backward()
 {
-    
+    // Backpropagation through photonic circuits (Phase 2)
 }
+
+} // namespace phx
