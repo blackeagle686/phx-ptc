@@ -75,15 +75,24 @@ public:
     void set_activation(const std::string& activation);
     
     void forward();
-    void backward();
+    void backward(const WaveChannel& grad_output);
 
-    const WaveChannel& get_output() const { return output; }
+    // Getters for training
+    const std::vector<Complex>& get_grad_weights() const { return grad_weights; }
+    const std::vector<Complex>& get_grad_bias() const { return grad_bias; }
+    void zero_grad();
 
 private:
     WaveChannel input;
     WaveChannel output;
+    WaveChannel linear_cache; // Cache for backprop
+    
     std::vector<Complex> weights;
     std::vector<Complex> bias;
+    
+    std::vector<Complex> grad_weights;
+    std::vector<Complex> grad_bias;
+    
     std::string activation;
 };
 
