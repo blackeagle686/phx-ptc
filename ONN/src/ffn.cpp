@@ -1,5 +1,6 @@
 #include "ffn.h"
 #include "core/wave.h"
+
 FFN::FFN()
 {
     input = WaveChannel();
