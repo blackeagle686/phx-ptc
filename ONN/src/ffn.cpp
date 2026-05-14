@@ -16,20 +16,13 @@ void FFN::set_input(const WaveChannel& input_val)
     this->input = input_val;
 }
 
-void FFN::set_weights(const std::vector<Complex>& weights_val)
-{
-    this->weights = weights_val;
-}
+void FFN::set_weights(const std::vector<Complex>& weights_val) this->weights = weights_val;
 
-void FFN::set_bias(const std::vector<Complex>& bias_val)
-{
-    this->bias = bias_val;
-}
+void FFN::set_bias(const std::vector<Complex>& bias_val) this->bias = bias_val;
 
-void FFN::set_activation(const std::string& activation_name)
-{
-    this->activation = activation_name;
-}
+
+void FFN::set_activation(const std::string& activation_name) this->activation = activation_name;
+
 
 void FFN::forward()
 {
