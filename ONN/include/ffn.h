@@ -77,7 +77,8 @@ public:
     void forward();
     void backward(const WaveChannel& grad_output);
 
-    // Getters for training
+    // Getters
+    const WaveChannel& get_output() const { return output; }
     const std::vector<Complex>& get_grad_weights() const { return grad_weights; }
     const std::vector<Complex>& get_grad_bias() const { return grad_bias; }
     void zero_grad();
