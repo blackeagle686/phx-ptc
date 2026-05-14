@@ -2,6 +2,7 @@
 
 
 using namespace phx;
+using namespace std;
 
 FFN::FFN()
 {
@@ -44,7 +45,7 @@ void FFN::forward()
     // init weights & bias if not set:
     if (weights.empty()) 
     {
-        
+        cout << "[*] Initializing weights and bias..." << endl;
         weights = std::vector<Complex>(input.size(), Complex(1.0, 0.0));
     }
     if (bias.empty()) bias = std::vector<Complex>(input.size(), Complex(0.0, 0.0));
