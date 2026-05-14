@@ -56,7 +56,7 @@ public:
         return from_polar(std::sqrt(I), phi);
     }
 
-    // ── Accessors ───────────────────────────────────────────────────
+    //  Accessors 
 
     // Raw complex amplitude
     Complex amplitude() const { return psi_; }
