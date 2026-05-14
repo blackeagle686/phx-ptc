@@ -22,6 +22,8 @@
 
     in optical Network: 
     
-        nerons = MZIs 
+        neron = MZI 
+        MZI : 
+            U()
     
 */
