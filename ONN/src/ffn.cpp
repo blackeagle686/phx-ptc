@@ -42,14 +42,8 @@ void FFN::set_activation(std::string activation = "mzi")
 void FFN::forward()
 {
     // init weights & bias if not set:
-    if (weights.empty()) 
-    {
-        weights = std::vector<Complex>(input.size(), Complex(1.0, 0.0));
-    }
-    if (bias.empty())
-    {
-        bias = std::vector<Complex>(input.size(), Complex(0.0, 0.0));
-    }
+    if (weights.empty()) weights = std::vector<Complex>(input.size(), Complex(1.0, 0.0));
+    if (bias.empty()) bias = std::vector<Complex>(input.size(), Complex(0.0, 0.0));
     
     // activation function:
     if (activation == "mzi") input = phx::mzi(input, weights, bias);
