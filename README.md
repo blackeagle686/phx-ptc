@@ -86,7 +86,7 @@ phx-ptc/
 - [ ] **Phase 2** — MZI Mesh Linear Transform (replaces nn.Linear)
 - [ ] **Phase 3** — Photonic Processing Element (PPE)
 - [ ] **Phase 4** — Photonic Core & Kernel Abstraction
-- [ ] **Phase 5** — Hybrid integration with phx-quantum
+- [ ] **Phase 5** — Hybrid integration with phx-quantum [PHX-QUANTUM](https://github.com/blackeagle686/phx-quantum)
 
 ## Zero Dependencies
 
