@@ -30,11 +30,11 @@ void FFN::set_bias(std::vector<Complex>& bias)
 }
 
 // using mzi by default:
-//   MZI ~ sigmoid ,
-//  Ring Resonator ~ tanh ,
-//  Saturable Absorber ~ ReLU ,
-//  Cross Gain Modulation ~ Softmax
-void FFN::set_activation(std::string activation = "mzi") 
+// MZI ~ sigmoid
+// Ring Resonator ~ tanh
+// Saturable Absorber ~ ReLU
+// Cross Gain Modulation ~ Softmax
+void FFN::set_activation(std::string activation = "mzi")
 {
     this->activation = activation;
 }
