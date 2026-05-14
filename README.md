@@ -8,14 +8,16 @@
 
 *Quantum Simulator: [PHX-QUANTUM](https://github.com/blackeagle686/phx-quantum)*
 
-## Vision
+## Photonic Hardware Primitives 🔬
 
-| GPU / Electronic | PHX-PTC / Photonic |
-|---|---|
-| Binary logic (0/1) | Wave amplitude (ψ) |
-| Transistor | Photonic element (MZI, SA) |
-| Activation function | Optical non-linearity |
-| Tensor Core (matmul) | MZI Mesh (speed of light) |
+PHX-PTC simulates the physical behavior of Silicon Photonic components. These are the building blocks of our optical neural network.
+
+| Component | Function | Visualization |
+|---|---|---|
+| **Saturable Absorber** | ReLU Activation | ![ReLU SA](docs/images/relu_sa.png) |
+| **MZI Modulator** | Sigmoid Activation | ![Sigmoid MZI](docs/images/sigmoid_mzi.png) |
+| **Ring Resonator** | Tanh Activation | ![Tanh Ring](docs/images/tanh_bistable.png) |
+| **SOA Array** | Softmax (XGM) | ![Softmax XGM](docs/images/softmax_xgm.png) |
 
 ## Phase 1: Photonic Activation Functions
 
