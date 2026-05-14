@@ -13,11 +13,11 @@
 PHX-PTC simulates the physical behavior of Silicon Photonic components. These are the building blocks of our optical neural network.
 
 | Component | Function | Visualization |
-|---|---|---|
-| **Saturable Absorber** | ReLU Activation | ![ReLU SA](docs/images/relu_sa.png) |
-| **MZI Modulator** | Sigmoid Activation | ![Sigmoid MZI](docs/images/sigmoid_mzi.png) |
-| **Ring Resonator** | Tanh Activation | ![Tanh Ring](docs/images/tanh_bistable.png) |
-| **SOA Array** | Softmax (XGM) | ![Softmax XGM](docs/images/softmax_xgm.png) |
+| :--- | :--- | :--- |
+| **Saturable Absorber** | ReLU Activation | <img src="docs/images/relu_sa.png" width="200" alt="ReLU SA"> |
+| **MZI Modulator** | Sigmoid Activation | <img src="docs/images/sigmoid_mzi.png" width="200" alt="Sigmoid MZI"> |
+| **Ring Resonator** | Tanh Activation | <img src="docs/images/tanh_bistable.png" width="200" alt="Tanh Ring"> |
+| **SOA Array** | Softmax (XGM) | <img src="docs/images/softmax_xgm.png" width="200" alt="Softmax XGM"> |
 
 ## Phase 1: Photonic Activation Functions
 
