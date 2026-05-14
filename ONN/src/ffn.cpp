@@ -75,7 +75,8 @@ void FFN::forward()
 }
 
 // build it using digital gradian descent not a photonic gradian descent 
-// bcz 
+// bcz it will be hard 
+// in this case 
 void FFN::backward()
 {
     // Backpropagation through photonic circuits (Phase 2)
