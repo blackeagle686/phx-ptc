@@ -11,10 +11,8 @@ FFN::FFN() : activation("mzi")
 
 FFN::~FFN() {}
 
-void FFN::set_input(const WaveChannel& input_val)
-{
-    this->input = input_val;
-}
+void FFN::set_input(const WaveChannel& input_val) this->input = input_val;
+
 
 void FFN::set_weights(const std::vector<Complex>& weights_val) this->weights = weights_val;
 
