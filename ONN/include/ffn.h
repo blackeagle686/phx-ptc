@@ -2,5 +2,5 @@
 /*
     FFN : Feed Forward Neural Network
     in digital networks: 
-        net = w1x + w2x2
+        net = w1*x1 + w2*x2 + b
 */
