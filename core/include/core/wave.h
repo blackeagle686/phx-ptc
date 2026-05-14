@@ -168,7 +168,7 @@ public:
     explicit WaveChannel(std::vector<Wave> waves)
         : channels_(std::move(waves)) {}
 
-    // ── Accessors 
+    // Accessors 
 
     size_t size() const { return channels_.size(); }
     bool empty() const { return channels_.empty(); }
@@ -179,14 +179,14 @@ public:
     Wave& at(size_t i) { return channels_.at(i); }
     const Wave& at(size_t i) const { return channels_.at(i); }
 
-    // ── Iterators ───────────────────────────────────────────────────
+    // Iterators
 
     auto begin() { return channels_.begin(); }
     auto end() { return channels_.end(); }
     auto begin() const { return channels_.begin(); }
     auto end() const { return channels_.end(); }
 
-    // ── Aggregate Operations ────────────────────────────────────────
+    // Aggregate Operations
 
     // Total optical power across all channels: Σ |ψ_j|²
     Intensity total_power() const {
