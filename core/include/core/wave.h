@@ -45,6 +45,7 @@ public:
 
     // From magnitude and phase (polar form)
     // ψ = magnitude · e^(iφ)
+    
     static Wave from_polar(double magnitude, Phase phi) {
         return Wave(std::polar(magnitude, phi));
     }
