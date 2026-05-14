@@ -56,6 +56,9 @@ cmake --build build --config Release
 
 # Photonic neuron example
 .\build\examples\Release\photonic_neuron.exe
+
+# Interactive Optical Neural Network layer
+.\build\examples\Release\onn_ffn.exe
 ```
 
 ## Test
