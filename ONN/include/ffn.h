@@ -59,25 +59,32 @@
 
 #include "core/complex.h"
 #include "core/wave.h"
+#include <vector>
+#include <string>
 
-class FFN{
+namespace phx {
 
-    public:
-        FFN();
-        ~FFN();
+class FFN {
+public:
+    FFN();
+    ~FFN();
 
-        void set_input(WaveChannel& input);
-        void set_weights(std::vector<Complex>& weights);
-        void set_bias(std::vector<Complex>& bias);
-        void set_activation(std::string activation);
-        void forward();
-        void backward();
+    void set_input(const WaveChannel& input);
+    void set_weights(const std::vector<Complex>& weights);
+    void set_bias(const std::vector<Complex>& bias);
+    void set_activation(const std::string& activation);
+    
+    void forward();
+    void backward();
 
-    private:
-        WaveChannel input;
-        WaveChannel output;
-        std::vector<Complex> weights;
-        std::vector<Complex> bias;
-        std::string activation;
+    const WaveChannel& get_output() const { return output; }
 
-}
+private:
+    WaveChannel input;
+    WaveChannel output;
+    std::vector<Complex> weights;
+    std::vector<Complex> bias;
+    std::string activation;
+};
+
+} // namespace phx
