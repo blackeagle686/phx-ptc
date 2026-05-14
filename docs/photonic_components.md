@@ -30,7 +30,7 @@ The **MZI** uses constructive and destructive interference between two waveguide
 
 **Optical Bistability** occurs in non-linear cavities or ring resonators. When the input intensity reaches a certain level, the phase inside the cavity flips rapidly, creating a sharp S-curve that transitions from an "off" state to an "on" state, similar to the **Tanh** function.
 
-![Ring Resonator for Tanh](file:///c:/Users/The_Last_King/OneDrive/Documents/Projects/phx-ptc/docs/images/tanh_bistable.png)
+![Ring Resonator for Tanh](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcfBs8n9X2vPq7f6AfmPttV1-J-t8upw0Jtg&s)
 
 *   **Physical Mapping**: Sharp phase-flip transition $[-1, 1]$.
 *   **Advantage**: High-contrast switching and memory effects.
