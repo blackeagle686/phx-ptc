@@ -24,7 +24,6 @@
     ========================================================================
 
     in optical Networks: 
-    
         neron = MZI 
         MZI : 
             U(theta, phi) = [
@@ -36,7 +35,6 @@
             theta : rotation angle
             phi : phase shift
             
-        
     to represent a netowrk of N neurons : 
         U_total = U_N * U_{N-1} * ... * U_1
         
