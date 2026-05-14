@@ -12,10 +12,7 @@ FFN::FFN()
     activation = "";
 }
 
-FFN::~FFN()
-{
-
-}
+FFN::~FFN(){}
 
 void FFN::set_input(WaveChannel& input)
 {
