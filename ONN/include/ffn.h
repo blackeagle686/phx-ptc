@@ -10,15 +10,16 @@
         relu    : f(x) = max(0, x)
         softmax : f(x) = exp(x) / sum(exp(x))
     
-    
     output of activation function: 
         a = f(w·x + b)
-    
+
     where: 
         w : weight matrix
         x : input vector
         b : bias vector
         f : activation function
+
+
 
     in optical Network: 
     
