@@ -10,6 +10,8 @@
         relu    : f(x) = max(0, x)
         softmax : f(x) = exp(x) / sum(exp(x))
     
+    
+    output: 
         
     
 */
