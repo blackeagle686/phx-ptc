@@ -14,5 +14,12 @@
     output of activation function: 
         a = f(w·x + b)
     
+    where: 
+        w : weight matrix
+        x : input vector
+        b : bias vector
+        f : activation function
+
+    in 
     
 */
